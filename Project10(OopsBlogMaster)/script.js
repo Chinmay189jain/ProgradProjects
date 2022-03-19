@@ -3,6 +3,7 @@ class Blog{
     constructor(title,detail){
        this.titles = title;
        this.details = detail;
+       this.imageURL = "./assets/javascript.png";
     }
     addImage(){
         var image_card = document.createElement('img');
@@ -10,7 +11,7 @@ class Blog{
         console.log(image_card);
         console.log("image");
         document.getElementById("card-text").appendChild(image_card);
-        document.getElementById("blog-image").src = "assets/javascript.png";     
+        document.getElementById("blog-image").src = this.imageURL;     
     }
     addTitle(){
         var title_card = document.createElement('h1');
