@@ -10,7 +10,7 @@ class Blog{
         console.log(image_card);
         console.log("image");
         document.getElementById("card-text").appendChild(image_card);
-        document.getElementById("blog-image").src = "./assets/javascript.png";     
+        document.getElementById("blog-image").src = "assets/javascript.png";     
     }
     addTitle(){
         var title_card = document.createElement('h1');
